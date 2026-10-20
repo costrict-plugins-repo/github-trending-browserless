@@ -1,0 +1,15 @@
+{
+  "name": "browserless",
+  "description": "Browserless.io browser automation for Claude — an interactive web agent plus scraping, search, crawling, export, and Lighthouse audits",
+  "version": "1.0.0",
+  "author": {
+    "name": "browserless.io",
+    "url": "https://www.browserless.io"
+  },
+  "homepage": "https://docs.browserless.io/rest-apis/intro",
+  "repository": "https://github.com/browserless/claude-plugin",
+  "license": "SSPL-1.0",
+  "keywords": ["browserless", "agent", "browser-automation", "scraping", "crawl", "search", "performance", "lighthouse", "export", "mcp"],
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}
