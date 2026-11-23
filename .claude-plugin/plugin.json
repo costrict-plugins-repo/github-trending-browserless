@@ -1,0 +1,31 @@
+{
+  "name": "browserless",
+  "description": "Browserless.io browser automation for Claude — an interactive web agent plus scraping, search, crawling, export, and Lighthouse audits",
+  "version": "1.1.0",
+  "author": {
+    "name": "browserless.io",
+    "url": "https://www.browserless.io"
+  },
+  "homepage": "https://docs.browserless.io/rest-apis/intro",
+  "repository": "https://github.com/browserless/claude-plugin",
+  "license": "SSPL-1.0",
+  "keywords": ["browserless", "agent", "browser-automation", "scraping", "crawl", "search", "performance", "lighthouse", "export", "mcp"],
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://www.browserless.io/privacy-policy",
+  "mcpServers": "./.mcp.json",
+  "userConfig": {
+    "browserless_token": {
+      "type": "string",
+      "title": "Browserless API token",
+      "description": "API token for the hosted Browserless MCP server, from your account at https://www.browserless.io/account/home. Claude Code stores it as a secret, not in settings.json.",
+      "sensitive": true,
+      "required": true
+    },
+    "api_url": {
+      "type": "string",
+      "title": "Browserless API URL",
+      "description": "Hosted region used by all skills: https://production-sfo.browserless.io (default), https://production-lon.browserless.io, https://production-ams.browserless.io, or another https://*.browserless.io URL such as a dedicated deployment. Arbitrary self-hosted URLs and self-hosted-only tokens are not supported by this plugin.",
+      "default": "https://production-sfo.browserless.io"
+    }
+  }
+}
